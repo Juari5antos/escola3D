@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Aluno(models.Model):
     nome = models.CharField(max_length=30)
     cpf = models.CharField(max_length=15)
@@ -12,9 +13,10 @@ class Aluno(models.Model):
         )
     )
 
-    def --str - -(self):
+    def __str__(self):
 
-    return self.none
+        return self.nome
+
 
 class Curso(models.Model):
     curso = models.CharField(max_length=30)
@@ -27,6 +29,6 @@ class Curso(models.Model):
         )
     )
 
-    def --str - -(self):
+    def __str__(self):
 
-    return self.none
+        return self.curso
